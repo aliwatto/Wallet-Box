@@ -1,0 +1,187 @@
+* {
+  font-size: 62.5%;
+  font-family: "Segoe UI", sans-serif;
+  /* line-height: 2rem; */
+  padding: 0;
+  margin: 0;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(55, 54, 54);
+  width: 100vw;
+  height: 100vh;
+}
+
+.box-container {
+  max-width: 315px;
+  background-color: white;
+  width: 100%;
+  padding: 29px 24px 24px;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.first-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  transition: background-color 0.3s;
+  background-color: #fff;
+}
+.btn:hover {
+  transition: background-color 0.3s;
+  background-color: #d7d7df40;
+  border-radius: 5rem;
+}
+
+.btn .help-btn {
+  cursor: pointer;
+}
+.btn .close-btn {
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+
+.heading {
+  font-size: 1.8rem;
+  color: #373737;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px 0px 24px;
+  padding: 1.9rem 2.4rem 0.6rem 1.9rem;
+  /* gap: 1.5rem; */
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  border-radius: 1.8rem;
+  margin-bottom: 1.1rem;
+}
+
+button:hover {
+  transition: border 0.2s;
+  border: 2px solid #2767f29e;
+  /* margin-bottom: 16px; */
+}
+
+button .svgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button .svgs .svg-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+}
+
+button .svgs .svg-container img {
+  width: 10px;
+  border-radius: 27.5%;
+}
+button .svgs .svg-container {
+  padding-right: 1px;
+}
+
+.buttons-container .text {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #373737;
+}
+.buttons-container .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  /* background-color: blue; */
+  pointer-events: none;
+}
+
+.box-container .wallet-text {
+  text-align: center;
+  /* background-color: red; */
+  pointer-events: visible;
+  width: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.box-container .wallet-text .images {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.box-container .wallet-text .images .wallet-1 {
+  transition: opacity 0.5s ease-out;
+  opacity: 1;
+}
+
+.box-container .wallet-text:hover .wallet-1 {
+  zoom: 0;
+  filter: alpha(opacity=50);
+  transition: opacity 0.3s ease-in;
+  opacity: 0;
+}
+
+.box-container .wallet-text .wallet-2 {
+  position: absolute;
+  right: 0rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+.box-container .wallet-text:hover .wallet-2 {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  transition: opacity 0.6s;
+  opacity: 1;
+}
+
+.box-container .wallet-text p {
+  font-size: 1.5rem;
+  transition: color 0.5s ease-out;
+  color: #999999;
+}
+
+.box-container .wallet-text:hover p {
+  zoom: 1;
+  filter: alpha(color=50);
+  transition: color 0.3s ease-in;
+  color: black;
+}
