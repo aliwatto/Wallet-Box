@@ -1,7 +1,6 @@
 * {
   font-size: 62.5%;
   font-family: "Segoe UI", sans-serif;
-  /* line-height: 2rem; */
   padding: 0;
   margin: 0;
 }
@@ -12,7 +11,6 @@
   background-color: rgb(55, 54, 54);
   width: 100vw;
   height: 100vh;
-  /* display: none; */
 }
 
 .box-container {
@@ -40,6 +38,7 @@
   height: 3rem;
   transition: background-color 0.3s;
   background-color: #fff;
+  cursor: pointer;
 }
 .btn:hover {
   transition: background-color 0.3s;
@@ -47,7 +46,8 @@
   border-radius: 5rem;
 }
 
-.btn .help-btn {
+.btn .help-btn,
+.back-btn {
   cursor: pointer;
 }
 .btn .close-btn {
@@ -67,7 +67,6 @@
   align-items: center;
   padding: 20px 24px 0px 24px;
   padding: 1.9rem 2.4rem 0.6rem 1.9rem;
-  /* gap: 1.5rem; */
 }
 
 button {
@@ -86,7 +85,6 @@ button {
 button:hover {
   transition: border 0.2s;
   border: 2px solid #2767f29e;
-  /* margin-bottom: 16px; */
 }
 
 button .svgs {
@@ -125,13 +123,11 @@ a {
   text-decoration: none;
   display: flex;
   justify-content: center;
-  /* background-color: blue; */
   pointer-events: none;
 }
 
 .box-container .wallet-text {
   text-align: center;
-  /* background-color: red; */
   pointer-events: visible;
   width: 18rem;
   display: flex;
@@ -198,6 +194,7 @@ a {
   border-radius: 2rem;
   margin: 1rem;
 }
+
 .metamask-box .middle-section {
   display: flex;
   flex-direction: column;
@@ -219,6 +216,7 @@ a {
 }
 
 .metamask-box .last-section {
+  transition: background-color 0.2s ease;
   background-color: #f5f7f9;
   padding: 1.2rem;
   border-radius: 1.5rem;
@@ -232,6 +230,11 @@ a {
   gap: 0.4rem;
   text-decoration: none;
 }
+.metamask-box .last-section:hover {
+  transition: background-color 0.2s ease;
+  background-color: #dbdde0b7;
+  cursor: pointer;
+}
 .metamask-box .last-section a img {
   width: 2.2rem;
 }
@@ -240,8 +243,8 @@ a {
   color: #373737;
 }
 
-/* -------------------- Brave Box ---------------------------- */
-.brave-box {
+/* -------------------- Brave Box Establishing ---------------------------- */
+.brave-box-establishing {
   display: none;
   max-width: 270px;
   background-color: white;
@@ -250,7 +253,7 @@ a {
   border-radius: 2rem;
   margin: 1rem;
 }
-.brave-box .middle-section {
+.brave-box-establishing .middle-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -258,33 +261,86 @@ a {
   padding: 2rem;
 }
 
-.brave-box .middle-section .box-image {
+.brave-box-establishing .middle-section .box-image {
   height: 10rem;
   margin: 2rem 0 1.5rem 0;
   display: flex;
   position: relative;
 }
-.brave-box .middle-section .box-image .try-again {
+.brave-box-establishing .middle-section .box-image .try-again {
   position: absolute;
   top: 6.2rem;
   left: 3.3rem;
 }
-.brave-box .middle-section .box-image .try-again {
+.brave-box-establishing .middle-section .box-image .try-again {
   position: absolute;
   top: 6.2rem;
   left: 3.3rem;
+  cursor: pointer;
 }
 
-.brave-box .middle-section .heading {
+.brave-box-establishing .middle-section .heading {
   display: flex;
   gap: 0.7rem;
 }
-.brave-box .middle-section .heading .text {
+.brave-box-establishing .middle-section .heading .text {
+  font-size: 1.6rem;
+  color: #373737;
+}
+
+.brave-box-establishing .middle-section p {
+  font-size: 1.4rem;
+  color: #999999b7;
+  text-align: center;
+  padding: 1rem 0.6rem 0 0.6rem;
+}
+
+/* -------------------- Brave Box Failed ---------------------------- */
+.brave-box-failed {
+  display: none;
+  max-width: 270px;
+  background-color: white;
+  width: 100%;
+  padding: 20px 15px 24px;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+.brave-box-failed .middle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.brave-box-failed .middle-section .box-image {
+  height: 10rem;
+  margin: 2rem 0 1.5rem 0;
+  display: flex;
+  position: relative;
+}
+.brave-box-failed .middle-section .box-image .try-again {
+  position: absolute;
+  top: 6.2rem;
+  left: 3.3rem;
+}
+.brave-box-failed .middle-section .box-image .try-again {
+  position: absolute;
+  top: 6.2rem;
+  left: 3.3rem;
+  cursor: pointer;
+}
+
+.brave-box-failed .middle-section .heading {
+  display: flex;
+  gap: 0.7rem;
+}
+.brave-box-failed .middle-section .heading .text {
   font-size: 1.6rem;
   color: red;
 }
 
-.brave-box .middle-section p {
+.brave-box-failed .middle-section p {
   font-size: 1.4rem;
   color: #999999b7;
   text-align: center;
@@ -329,7 +385,6 @@ a {
   position: absolute;
   width: 22rem;
   height: 15rem;
-  /* top: 28rem; */
   bottom: 13rem;
 }
 .get-wallet-box .middle-section .svgs .metamask {
@@ -458,7 +513,6 @@ a {
   font-size: 1.6rem;
   text-align: center;
   color: #999999;
-  /* font-size: 100; */
   padding: 0 0rem;
 }
 
@@ -498,8 +552,8 @@ a {
 }
 .get-wallet-box .last-section a .arrows .line {
   position: absolute;
-  top: 0.35rem;
-  right: 0rem;
+  top: 0.3rem;
+  right: 0.15rem;
   opacity: 0;
 }
 
