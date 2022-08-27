@@ -12,6 +12,7 @@
   background-color: rgb(55, 54, 54);
   width: 100vw;
   height: 100vh;
+  /* display: none; */
 }
 
 .box-container {
@@ -21,6 +22,7 @@
   padding: 29px 24px 24px;
   border-radius: 2rem;
   margin: 1rem;
+  display: none;
 }
 
 .first-section {
@@ -184,4 +186,323 @@ a {
   filter: alpha(color=50);
   transition: color 0.3s ease-in;
   color: black;
+}
+
+/* -------------------- MetaMask Box ---------------------------- */
+.metamask-box {
+  display: none;
+  max-width: 290px;
+  background-color: white;
+  width: 100%;
+  padding: 29px 24px 24px;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+.metamask-box .middle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.metamask-box .middle-section img {
+  width: 6rem;
+  padding: 5rem 0 2rem 0;
+}
+.metamask-box .middle-section p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #999999;
+  font-size: 100;
+  padding: 0 2rem;
+}
+
+.metamask-box .last-section {
+  background-color: #f5f7f9;
+  padding: 1.2rem;
+  border-radius: 1.5rem;
+  margin: 2.5rem 0 0 0;
+}
+
+.metamask-box .last-section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+}
+.metamask-box .last-section a img {
+  width: 2.2rem;
+}
+.metamask-box .last-section a .text {
+  font-size: 1.4rem;
+  color: #373737;
+}
+
+/* -------------------- Brave Box ---------------------------- */
+.brave-box {
+  display: none;
+  max-width: 270px;
+  background-color: white;
+  width: 100%;
+  padding: 20px 15px 24px;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+.brave-box .middle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.brave-box .middle-section .box-image {
+  height: 10rem;
+  margin: 2rem 0 1.5rem 0;
+  display: flex;
+  position: relative;
+}
+.brave-box .middle-section .box-image .try-again {
+  position: absolute;
+  top: 6.2rem;
+  left: 3.3rem;
+}
+.brave-box .middle-section .box-image .try-again {
+  position: absolute;
+  top: 6.2rem;
+  left: 3.3rem;
+}
+
+.brave-box .middle-section .heading {
+  display: flex;
+  gap: 0.7rem;
+}
+.brave-box .middle-section .heading .text {
+  font-size: 1.6rem;
+  color: red;
+}
+
+.brave-box .middle-section p {
+  font-size: 1.4rem;
+  color: #999999b7;
+  text-align: center;
+  padding: 1rem 2rem 0 2rem;
+}
+
+/* -------------------- Get Wallet Box ---------------------------- */
+.get-wallet-box {
+  /* display: none; */
+  max-width: 290px;
+  background-color: white;
+  width: 100%;
+  padding: 29px 24px 24px;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+.get-wallet-box .first-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.get-wallet-box .first-section .heading {
+  font-size: 1.8rem;
+}
+
+.get-wallet-box .middle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+  position: relative;
+}
+
+.get-wallet-box .middle-section .background {
+  width: 25rem;
+  border-inline-start-color: #ff008c78;
+  padding: 5rem 2rem 2rem 2rem;
+  margin-bottom: 1rem;
+}
+.get-wallet-box .middle-section .svgs {
+  position: absolute;
+  width: 22rem;
+  height: 15rem;
+  /* top: 28rem; */
+  bottom: 13rem;
+}
+.get-wallet-box .middle-section .svgs .metamask {
+  position: absolute;
+  bottom: 11rem;
+  width: 4rem;
+  background-color: #e8d1b7;
+  padding: 0.8rem;
+  border-radius: 1.6rem;
+  transform: rotate(-8deg);
+  animation: updown1 4s ease-in-out infinite;
+}
+.get-wallet-box .middle-section .svgs .shield {
+  position: absolute;
+  bottom: 11.5rem;
+  left: 16.5rem;
+  width: 5rem;
+  padding: 0.8rem;
+  border-radius: 1.6rem;
+  transform: rotate(-8deg);
+  animation: updown2 4.2s ease-in-out infinite;
+}
+.get-wallet-box .middle-section .svgs .ribbon {
+  position: absolute;
+  top: 9rem;
+  width: 6rem;
+  padding: 0rem;
+  border-radius: 1.6rem;
+  transform: rotate(-8deg);
+  animation: updown3 5s ease-in-out infinite;
+  box-shadow: -1px -1px 27px 0px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: -1px -1px 27px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: -1px -1px 27px 0px rgba(0, 0, 0, 0.16);
+}
+.get-wallet-box .middle-section .svgs .shark {
+  position: absolute;
+  top: 10rem;
+  left: 15.5rem;
+  width: 5rem;
+  padding: 0.8rem;
+  border-radius: 1.6rem;
+  transform: rotate(-8deg);
+  animation: updown4 3.8s ease-in-out infinite;
+}
+.get-wallet-box .middle-section .svgs .coinbase {
+  position: absolute;
+  top: 3rem;
+  left: 7.2rem;
+  width: 7.5rem;
+  padding: 0.8rem;
+  border-radius: 1.6rem;
+  transform: rotate(-8deg);
+  animation: updown5 3.4s ease-in-out infinite;
+}
+
+@keyframes updown1 {
+  0% {
+    transform: rotate(-4deg) translateY(-4%);
+  }
+
+  50% {
+    transform: rotate(4deg) translateY(4%);
+  }
+
+  100% {
+    transform: rotate(-4deg) translateY(-4%);
+  }
+}
+@keyframes updown2 {
+  0% {
+    transform: rotate(-4deg) translateY(-4%);
+  }
+
+  50% {
+    transform: rotate(4deg) translateY(4%);
+  }
+
+  100% {
+    transform: rotate(-4deg) translateY(-4%);
+  }
+}
+@keyframes updown3 {
+  0% {
+    transform: rotate(-4deg) translateY(-4%);
+  }
+
+  50% {
+    transform: rotate(4deg) translateY(4%);
+  }
+
+  100% {
+    transform: rotate(-4deg) translateY(-4%);
+  }
+}
+@keyframes updown4 {
+  0% {
+    transform: rotate(-4deg) translateY(-4%);
+  }
+
+  50% {
+    transform: rotate(4deg) translateY(4%);
+  }
+
+  100% {
+    transform: rotate(-4deg) translateY(-4%);
+  }
+}
+@keyframes updown5 {
+  0% {
+    transform: rotate(-4deg) translateY(-5%);
+  }
+
+  50% {
+    transform: rotate(4deg) translateY(5%);
+  }
+
+  100% {
+    transform: rotate(-4deg) translateY(-5%);
+  }
+}
+
+.get-wallet-box .middle-section .heading {
+  font-size: 1.7rem;
+}
+.get-wallet-box .middle-section p {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #999999;
+  /* font-size: 100; */
+  padding: 0 0rem;
+}
+
+.get-wallet-box .last-section {
+  transition: background-color 0.2s ease;
+  background-color: #f5f7f9;
+  padding: 1.3rem;
+  border-radius: 1.5rem;
+  margin: 2.5rem 0 0 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.get-wallet-box .last-section:hover {
+  transition: background-color 0.2s ease;
+  background-color: #dbdde0b7;
+  cursor: pointer;
+}
+
+.get-wallet-box .last-section a {
+  text-decoration: none;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.get-wallet-box .last-section a .text {
+  font-size: 1.5rem;
+  color: #373737;
+}
+.get-wallet-box .last-section a .arrows {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+.get-wallet-box .last-section a .arrows .cap {
+  bottom: 0rem;
+}
+.get-wallet-box .last-section a .arrows .line {
+  position: absolute;
+  top: 0.35rem;
+  right: 0rem;
+  opacity: 0;
+}
+
+.get-wallet-box .last-section:hover a .arrows .line {
+  opacity: 1;
 }

@@ -1,0 +1,17 @@
+<svg
+  width="11"
+  height="15"
+  viewBox="0 0 13 12"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class="arrows"
+>
+
+  <path
+    stroke="currentColor"
+    d="M7.51431 1.5L11.757 5.74264M7.5 10.4858L11.7426 6.24314"
+    stroke-width="2"
+    stroke-linecap="round"
+    class="arrow"
+  ></path>
+</svg>
